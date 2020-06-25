@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>My Basic Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input id="display" type="text" placeholder="0" step="any">
+        <div class="calculator-buttons">
+            <button class="calc-btn is-clr" data-btn-type="clear" onclick="doCal(this)">AC</button>
+            <button class="calc-btn" data-value="negate" data-btn-type="negation"
+                onclick="doCal(this)">&plus;&#47;&minus;</button>
+            <button class="calc-btn" data-value="%" data-btn-type="operation" onclick="doCal(this)">%</button>
+            <button class="calc-btn" data-value="/" data-btn-type="operation" onclick="doCal(this)">&divide;</button>
+
+            <button class="calc-btn" data-value="7" data-btn-type="number" onclick="doCal(this)">7</button>
+            <button class="calc-btn" data-value="8" data-btn-type="number" onclick="doCal(this)">8</button>
+            <button class="calc-btn" data-value="9" data-btn-type="number" onclick="doCal(this)">9</button>
+            <button class="calc-btn" data-value="*" data-btn-type="operation" onclick="doCal(this)">&times;</button>
+
+            <button class="calc-btn" data-value="4" data-btn-type="number" onclick="doCal(this)">4</button>
+            <button class="calc-btn" data-value="5" data-btn-type="number" onclick="doCal(this)">5</button>
+            <button class="calc-btn" data-value="6" data-btn-type="number" onclick="doCal(this)">6</button>
+            <button class="calc-btn" data-value="-" data-btn-type="operation" onclick="doCal(this)">&minus;</button>
+
+            <button class="calc-btn" data-value="1" data-btn-type="number" onclick="doCal(this)">1</button>
+            <button class="calc-btn" data-value="2" data-btn-type="number" onclick="doCal(this)">2</button>
+            <button class="calc-btn" data-value="3" data-btn-type="number" onclick="doCal(this)">3</button>
+            <button class="calc-btn" data-value="+" data-btn-type="operation" onclick="doCal(this)">&plus;</button>
+
+            <button class="calc-btn is-zero" data-value="0" data-btn-type="number" onclick="doCal(this)">0</button>
+            <button class="calc-btn" data-value="decimal" data-btn-type="decimalization"
+                onclick="doCal(this)">&#46;</button>
+            <button class="calc-btn is-equals" data-btn-type="result" onclick="doCal(this)">&equals;</button>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
